@@ -16,7 +16,11 @@ function Contacto(nombre,edad,email){
 
 function guardarContacto(nombre,edad,email){
 var c = new Contacto(nombre,edad,email);
-bd.put(c);
+bd.put(c,function(err,doc){
+  if(!err){
+    alert('El contacto ha sido guardado');
+  }
+});
 }
 
 function consultar(contenido){
