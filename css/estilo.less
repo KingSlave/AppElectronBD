@@ -33,3 +33,27 @@ label{
   border-radius: 4px;
   box-shadow: 0.5px 0.5px 10px gray;
 }
+table{
+  border-collapse: collapse;
+}
+
+table *{
+  border: 1px solid black;
+  padding: 5px;
+}
+
+table>thead>tr{
+  background-color: darkgray;
+  color:white;
+  font-weight: bold;
+}
+
+table>tbody>tr:nth-child(even){
+  background-color: lightgray;
+}
+
+table>tbody>tr:hover{
+  background-color: darkblue;
+  color:white;
+  cursor: pointer;
+}
